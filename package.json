@@ -1,0 +1,30 @@
+{
+  "name": "server_test",
+  "version": "1.0.0",
+  "description": "Server_test",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "SET NODE_ENV=development&nodemon dist/src/index.js",
+    "start": "tsc&SET NODE_ENV=production&node dist/src/index.js",
+    "tsc": "tsc"
+  },
+  "author": "Manuel Lopez Henao",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.14",
+    "@types/morgan": "^1.9.3",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.7.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.26.0"
+  }
+}
